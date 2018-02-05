@@ -2,8 +2,12 @@
 #include <stdlib.h>
 #include <math.h>
 
+//Modified gcd algorithm:
 int gcd(int a, int b); 
 
+//Signed ints will cause issues with correctness
+//of the result. The code will compile and run but
+//may not compute the correct answer.
 void main() {
 
     int a, b;
@@ -22,6 +26,7 @@ void main() {
     }
 }
 
+//Modified GCD algorithm:
 int gcd(int x, int y) {
     
     int a, b;

@@ -2,12 +2,18 @@
 #include <stdlib.h>
 #include <math.h>
 
+//Modified version of GCD alg.
 int gcd(int, int);
+//custom function, allows computation of powers
+//using type int.
 int intPow(int, int);
 
+//This algorithm may break for very large ints.
+//Computations will be incorrect for signed
+//negative int input for p. 
 void main() {
    
-    int p;
+    int p; //if p is negative all computations will be incorrect
     int isGen = 1;
 
     printf("What is the group size? (Must be a prime number): ");
@@ -35,11 +41,15 @@ void main() {
     printf("%d is a generator of %d\n", g, p);
 }
 
-
+//Computes the power of a^b with type int.
+//Overflow issues will occur for very large 
+//a and b and cause incorrect results, but
+//should not stop the code from running.
 int intPow(int a, int b) {
 
     int result;
-
+    
+    //To prevent overflow, keep a and b < 16 bits long.
     for (int i = 0; i < b; i++) {
         result = result * a;    
     }
@@ -47,7 +57,7 @@ int intPow(int a, int b) {
     return result;
 }
 
-
+//Modified version of the GCD algorithm.
 int gcd(int a, int b) {
     
     int temp = a;

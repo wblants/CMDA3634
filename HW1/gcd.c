@@ -1,32 +1,20 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
-int gcd(int x, int y);
-
+//This algrotihm should be relatively resistant to overflow
+//errors casused by operations on large integers. There may
+//be issues with signed integers (particuarlly negative).
 void main() {
-   
-    int a, b;
     
+    int a; 
+    int b;
+    
+    //Prompt user for input:
     printf("Enter the first number: ");
     scanf("%d", &a);
     printf("Enter the second number: ");
     scanf("%d", &b);
-
-    int GCD = gcd(a, b);
-    //For very large numbers (greater than 30 bits), there may be issues
-    //multiplying here
-    int lcm = a * b / GCD;
-
-    printf("The least common multiple is: %d\n", lcm);  
-
-}
-
-int gcd(int x, int y) {
-    
-    int a, b;
-    a = x;
-    b = y;
     
     int temp = a;
     //Swap the values if a < b
@@ -34,7 +22,7 @@ int gcd(int x, int y) {
         a = b;
         b = temp;
     }
-
+    //Euclidian algorithm:
     int remainder = 1;
     int count = 0;
 
@@ -44,7 +32,8 @@ int gcd(int x, int y) {
         b = remainder;
         count++;
     }
-
+    
+    //Conditions for a % b = 0 (pairs that do not enter the loop):
     if (count == 0 && a / b == b) {
         remainder = a / b;
     }
@@ -52,5 +41,6 @@ int gcd(int x, int y) {
         remainder = b;
     }
 
-    return remainder;    
+    printf("The greatest common denominator is: %d\n", remainder); 
+
 }

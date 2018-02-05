@@ -1,0 +1,4 @@
+This command should allow fetching and pushing to github
+--------------------------------------------------------
+export GIT_SSL_NO_VERIFY=1
+

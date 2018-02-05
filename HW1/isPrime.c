@@ -2,14 +2,19 @@
 #include <stdlib.h>
 #include <math.h>
 
+//There are no real concerns for this algorithm. 
+//Signed negative ints are handled as well as
+//ints 1-3. 
 void main() {
     
     int a;
     int isPrime = 1; //true
     
+    //User input:
     printf("Enter the number: ");
     scanf("%d", &a);
-    
+
+    //(-inf, 1] are not prime
     if (a <= 1) isPrime = 0; //false
 
     //Using trial division:
@@ -21,7 +26,8 @@ void main() {
         }
         n++;
     } 
-
+    
+    //If true:
     if (isPrime == 1) {
         printf("%d is prime.\n", a);
     }
