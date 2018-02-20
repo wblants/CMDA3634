@@ -2,7 +2,18 @@
 #include <stdlib.h>
 #include <math.h>
 
+#include "mpi.h"
+
 int main(int argc, char **argv) {
+   
+    MPI_Init(&argc, &argv);
+    
+    //Adding MPI stuff:
+    int rank, size;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_rank(MPI_COMM_WORLD, &size);
+    
+    int N;
 
   //need running tallies
   long long int Ntotal;
@@ -10,7 +21,9 @@ int main(int argc, char **argv) {
 
   //seed random number generator
   double seed = 1.0;
-  srand48(seed);
+  srand48(rank);
+
+  double pi, sum;
 
   for (long long int n=0; n<1000000000;n++) {
     //gererate two random numbers
@@ -23,11 +36,28 @@ int main(int argc, char **argv) {
     //check if its in the circle
     if (sqrt(x*x+y*y)<=1) Ncircle++;
     Ntotal++;
-  }
 
-  double pi = 4.0*Ncircle/ (double) Ntotal;
+    pi = 4.0*Ncircle/ (double) Ntotal;
 
-  printf("Our estimate of pi is %f \n", pi);
+    if ((rank == 0) && (n % 100 == 0)) {
+        printf("Our estimate of pi is %f \n", pi);
+    }
+  } 
+
+    pi = 4.0*Ncircle/ (double) Ntotal;  
+
+    MPI_Allreduce(&pi,
+            &sum,
+            1,
+            MPI_LONG,
+            MPI_SUM,
+            MPI_COMM_WORLD);
+    
+    double avg = sum / size;
+    
+    printf("The average computed pi is %f \n", avg);
+
+    MPI_Finalize();  
 
   return 0;
 }
