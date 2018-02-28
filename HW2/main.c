@@ -48,6 +48,8 @@ int main (int argc, char **argv) {
     while (isProbablyPrime(p) == 0 || isProbablyPrime(q) == 0) {
         p = randXbitInt(n);
         q = (p-1)/2;
+        printf("-------------------\n");
+        printf("p = %d & q = %d\n", p, q); 
     }
 
 	printf("p = %u is probably prime and equals 2*q + 1. q= %u and is also probably prime.\n", p, q);  
@@ -58,11 +60,11 @@ int main (int argc, char **argv) {
 	printf("g = %u is a generator of Z_%u \n", g, p);  
     
     //--------Discrete Log Problem-----------
-    int h = 5; // create a random private key.
-    int x;
+    int h = randXbitInt(n-1); // create a random private key.
+    int x = 0;
     //Need to solve g^x = h mod p:
     for (x = 0; x < p; x++) {
-        if ((int) pow(g,x) % p == h) { 
+        if (modExp(g,x,p) == h) { 
             break;
         }
     }

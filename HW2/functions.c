@@ -132,12 +132,25 @@ unsigned int isProbablyPrime(unsigned int N) {
 
   //if we're testing a large number switch to Miller-Rabin primality test
   /* Q2.1: Complete this part of the isProbablyPrime function using the Miller-Rabin pseudo-code */
-  unsigned int r,d;
+  unsigned int r = 1;
+  unsigned int d = (N - 1)/2;
+  int count = 0;
+  //Try and find r and d such that N-1 = 2^r*d
+  //Return false if no good r and d found after 100 steps.
+  //main.c will pick another random int and try this 
+  //process again until a good r and d are found
+  while (d % 2 == 0) {
+    if (count == 100) return 0; //force the main.c to pick another p.
+    r++;
+    d = (N - 1)/2;
+    count++;
+  }
+  printf("r = %d & d = %d\n", r, d);
+
   unsigned int x;
-  unsigned int a = 1;
+
   for (unsigned int n=0;n<NsmallPrimes;n++) {
-     a++;
-     x = modExp(a, d, N);
+     x = modExp(smallPrimeList[n], d, N);
         if (x == 1 || x == N-1) {
             continue;
         }
@@ -161,10 +174,10 @@ unsigned int isProbablyPrime(unsigned int N) {
 unsigned int findGenerator(unsigned int p) {
 	
     int q = (p - 1)/2;
-
 	int g;
+
 	for (g = 2; g < p; g++) {
-		if ( (int) pow(g,q) % p != 1 && (int) pow(g,2) % p != 1) {
+		if ( modExp(g,q,p) != 1 && modExp(g,2,p) != 1) {
 			break;
 		}		
 	}
