@@ -14,7 +14,7 @@ bool isProbablyPrime(int);
 
 void main() {
     
-    /*
+    
     int a,b,p;
 
     printf("Enter the first number a: ");
@@ -25,8 +25,10 @@ void main() {
     
     printf("Enter the group size p: ");
     scanf("%d", &p); 
-    */
-    //modExp(a, b, p);
+    
+    //modProd(a, b, p);
+    // modExp(a, b, p);
+    
     int N;
     printf("Enter the number N: ");
     scanf("%d", &N);
@@ -39,6 +41,7 @@ void main() {
     else {
         printf("False\n");
     }
+    
 }
 
 //----------- Function Definitions --------------
