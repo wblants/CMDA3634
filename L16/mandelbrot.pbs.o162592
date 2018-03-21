@@ -1,0 +1,22 @@
+gcc -O3 -I. -fopenmp -c mandelbrot.c
+gcc -O3 -fopenmp -o mandelbrot mandelbrot.o png_util.o -lpng -lm
+elapsed = 48.4257
+elapsed = 30.3986
+elapsed = 21.1825
+elapsed = 16.1705
+elapsed = 13.0689
+elapsed = 10.9509
+elapsed = 9.4336
+elapsed = 8.26452
+elapsed = 7.37581
+elapsed = 6.64393
+elapsed = 6.05365
+elapsed = 5.55664
+elapsed = 5.13815
+elapsed = 4.76828
+elapsed = 4.46177
+elapsed = 4.22628
+elapsed = 3.93028
+elapsed = 4.04971
+elapsed = 3.83814
+elapsed = 3.71477
