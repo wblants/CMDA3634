@@ -1,0 +1,1457 @@
+make: Nothing to be done for `all'.
+Using 4 MPI processes with n = 5 and Niter = 10.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000085 seconds. 
+The throughput for this program was 353452.584270 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 11.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000083 seconds. 
+The throughput for this program was 216946.758621 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 12.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000090 seconds. 
+The throughput for this program was 332881.269841 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 13.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 348557.119114 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 14.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000091 seconds. 
+The throughput for this program was 329395.602094 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 15.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 348557.119114 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 16.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000078 seconds. 
+The throughput for this program was 384798.532110 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 17.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 348557.119114 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 18.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000096 seconds. 
+The throughput for this program was 313007.761194 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 19.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000095 seconds. 
+The throughput for this program was 315361.203008 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 20.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000074 seconds. 
+The throughput for this program was 404595.241158 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 21.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000099 seconds. 
+The throughput for this program was 303202.698795 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 22.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000083 seconds. 
+The throughput for this program was 360541.891117 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 23.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000082 seconds. 
+The throughput for this program was 219469.395349 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 24.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Secret key found! x = 15 
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Run time for this program was 0.000090 seconds. 
+The throughput for this program was 332881.269841 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 25.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000080 seconds. 
+The throughput for this program was 374491.428571 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 26.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000082 seconds. 
+The throughput for this program was 365782.325581 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 27.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000087 seconds. 
+The throughput for this program was 206842.389041 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 28.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000092 seconds. 
+The throughput for this program was 325982.176166 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 29.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000081 seconds. 
+The throughput for this program was 370085.647059 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 30.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 348557.119114 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 31.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Secret key found! x = 15 
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 348557.119114 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 32.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000073 seconds. 
+The throughput for this program was 246723.764706 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 33.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000095 seconds. 
+The throughput for this program was 315361.203008 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 34.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000088 seconds. 
+The throughput for this program was 341000.325203 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 35.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000093 seconds. 
+The throughput for this program was 193583.261538 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 36.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Secret key found! x = 15 
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Run time for this program was 0.000076 seconds. 
+The throughput for this program was 394448.652038 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 37.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000070 seconds. 
+The throughput for this program was 429450.921502 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 38.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 349525.333333 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 39.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000075 seconds. 
+The throughput for this program was 399457.523810 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 40.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000079 seconds. 
+The throughput for this program was 380148.398792 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 41.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000103 seconds. 
+The throughput for this program was 174762.666667 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 42.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000070 seconds. 
+The throughput for this program was 256794.122449 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 43.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000088 seconds. 
+The throughput for this program was 204600.195122 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 44.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000090 seconds. 
+The throughput for this program was 333764.244032 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 45.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000091 seconds. 
+The throughput for this program was 330260.157480 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 46.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000085 seconds. 
+The throughput for this program was 353452.584270 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 47.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000091 seconds. 
+The throughput for this program was 329395.602094 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 48.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000089 seconds. 
+The throughput for this program was 202406.091153 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 49.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000076 seconds. 
+The throughput for this program was 236669.191223 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 50.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000078 seconds. 
+The throughput for this program was 384798.532110 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 51.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000081 seconds. 
+The throughput for this program was 370085.647059 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 52.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000085 seconds. 
+The throughput for this program was 212071.550562 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 53.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000070 seconds. 
+The throughput for this program was 257670.552901 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 54.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000103 seconds. 
+The throughput for this program was 174762.666667 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 55.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 348557.119114 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 56.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000091 seconds. 
+The throughput for this program was 330260.157480 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 57.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000079 seconds. 
+The throughput for this program was 379003.373494 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 58.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000075 seconds. 
+The throughput for this program was 239674.514286 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 59.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000078 seconds. 
+The throughput for this program was 383625.365854 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 60.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000078 seconds. 
+The throughput for this program was 384798.532110 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 61.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000079 seconds. 
+The throughput for this program was 379003.373494 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 62.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000072 seconds. 
+The throughput for this program was 416652.715232 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 63.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000085 seconds. 
+The throughput for this program was 353452.584270 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 64.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000104 seconds. 
+The throughput for this program was 288598.899083 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 65.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000090 seconds. 
+The throughput for this program was 199728.761905 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 66.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000080 seconds. 
+The throughput for this program was 375609.313433 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 67.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Secret key found! x = 9 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 209134.271468 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 68.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000082 seconds. 
+The throughput for this program was 365782.325581 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 69.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000081 seconds. 
+The throughput for this program was 371177.345133 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 70.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000092 seconds. 
+The throughput for this program was 325982.176166 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 71.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000077 seconds. 
+The throughput for this program was 389563.839009 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 72.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000099 seconds. 
+The throughput for this program was 303202.698795 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 73.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000088 seconds. 
+The throughput for this program was 341000.325203 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 74.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000079 seconds. 
+The throughput for this program was 380148.398792 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 75.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000093 seconds. 
+The throughput for this program was 322638.769231 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 76.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000082 seconds. 
+The throughput for this program was 366848.746356 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 77.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000078 seconds. 
+The throughput for this program was 383625.365854 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 78.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000085 seconds. 
+The throughput for this program was 352462.521008 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 79.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000081 seconds. 
+The throughput for this program was 370085.647059 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 80.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000092 seconds. 
+The throughput for this program was 325982.176166 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 81.
+
+ElGamal Setup successful.
+p = 19. 
+g = 15 is a generator of Z_19 
+Secret key: x = 9 
+h = g^x = 18
+
+Secret key found! x = 9 
+
+Using 4 processes to find the secret key...
+Secret key found! x = 9 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 209715.200000 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 82.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000073 seconds. 
+The throughput for this program was 409866.840391 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 83.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000087 seconds. 
+The throughput for this program was 344737.315068 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 84.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000087 seconds. 
+The throughput for this program was 344737.315068 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 85.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 348557.119114 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 86.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000087 seconds. 
+The throughput for this program was 345684.395604 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 87.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 348557.119114 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 88.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000093 seconds. 
+The throughput for this program was 322638.769231 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 89.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000073 seconds. 
+The throughput for this program was 411206.274510 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 90.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000094 seconds. 
+The throughput for this program was 319363.248731 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 91.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000091 seconds. 
+The throughput for this program was 330260.157480 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 92.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 349525.333333 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 93.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000081 seconds. 
+The throughput for this program was 371177.345133 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 94.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000092 seconds. 
+The throughput for this program was 325982.176166 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 95.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000110 seconds. 
+The throughput for this program was 272357.402597 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 96.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000100 seconds. 
+The throughput for this program was 299593.142857 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 97.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000073 seconds. 
+The throughput for this program was 411206.274510 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 98.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000086 seconds. 
+The throughput for this program was 348557.119114 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 99.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000072 seconds. 
+The throughput for this program was 416652.715232 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5 and Niter = 100.
+
+ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Secret key found! x = 15 
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Run time for this program was 0.000079 seconds. 
+The throughput for this program was 380148.398792 ops/second. 
+-----------------------------------------------------
