@@ -1,27 +1,12 @@
-#can change these if files are located elsewhere
-SOURCEDIR = ./.
-INCLUDEDIR = ./.
-OBJDIR = ./.
 
+mandelbrot : mandelbrot.o png_util.o 
+	nvcc -arch=sm_60 -o mandelbrot mandelbrot.o png_util.o -lpng -lm
 
-SOURCE = $(wildcard $(SOURCEDIR)/*cu)
-INCLUDES = $(wildcard $(INCLUDEDIR)/*h)
-OBJECTS = $(subst $(SOURCEDIR)/,$(OBJDIR)/,$(SOURCE:.cu=.o))
+mandelbrot.o : mandelbrot.cu png_util.h
+	nvcc -arch=sm_60 -I. -c mandelbrot.cu
 
-DEPS = $(INCLUDES) 
-FLAGS = -I$(INCLUDEDIR) -O3 -g -arch=sm_60
-LIBS  = -lm
+png_util.o : png_util.c png_util.h
+	nvcc -arch=sm_60 -I. -c png_util.c
 
-CC =  nvcc 
-
-$(OBJDIR)/%.o:$(SOURCEDIR)/%.cu $(DEPS)
-	$(CC) $(FLAGS) -o $@ $(LIBS) -c $<
-
-all: main
-
-main: $(OBJECTS) $(DEPS)
-	$(CC)  $(OBJECTS) $(FLAGS) -o main $(LIBS)
-
-clean:
-	rm -f main
-	rm -f $(OBJDIR)/*.o
+clean :
+	rm mandelbrot.o png_util.o mandelbrot
