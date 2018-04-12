@@ -237,7 +237,10 @@ void convertZToString(unsigned int  *Z,      unsigned int Nints,
   #pragma omp parallel for 
 
   for (int i = 0; i < Nchars; i += cpi) {
-      string[i] = (char) Z[i];
+      string[i] = '0';
+      for (int j = cpi; j > 0; j--) {
+        string[i + j/(cpi+1)] =(char) (Z[i] << 8*j); 
+      }
   }
 
 }
