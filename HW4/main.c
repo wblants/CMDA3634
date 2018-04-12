@@ -9,13 +9,13 @@
 
 int main (int argc, char **argv) {
 
-  int Nthreads = 1;
+  int Nthreads = atoi(argv[1]);
 
   omp_set_num_threads(Nthreads);
-
-	//seed value for the randomizer 
-  double seed = clock(); //this will make your program run differently everytime
-  //double seed = 0; //uncomment this and your program will behave the same everytime it's run
+  
+  //seed value for the randomizer 
+  //double seed = clock(); //this will make your program run differently everytime
+  double seed = 0; //uncomment this and your program will behave the same everytime it's run
 
   srand(seed);
 
@@ -23,7 +23,7 @@ int main (int argc, char **argv) {
   unsigned int p, g, h, x;
 
   //begin with rank 0 getting user's input
-	unsigned int n;
+  unsigned int n;
 
   printf("Enter a number of bits: "); fflush(stdout);
   char status = scanf("%u",&n);
@@ -46,13 +46,17 @@ int main (int argc, char **argv) {
   printf("Message = \"%s\"\n", message);
 
   /* Q1.1 Finish this line   */
-  unsigned int charsPerInt = ;
+  unsigned int charsPerInt = (unsigned int) (n-1)/8; //9 bits per char
+
+  printf("chars per int = %u\n", charsPerInt);
 
   padString(message, charsPerInt);
   printf("Padded Message = \"%s\"\n", message);
 
   unsigned int Nchars = strlen(message);
   unsigned int Nints  = strlen(message)/charsPerInt;
+
+  printf("Nchars = %u, Nints = %u\n", Nchars, Nints);
 
   //storage for message as elements of Z_p
   unsigned int *Zmessage = 
@@ -87,9 +91,14 @@ int main (int argc, char **argv) {
   printf("Using %d OpenMP threads to find the secret key...\n", Nthreads);
 
   /* Q2.3 Parallelize this loop with OpenMP   */
+
   double startTime = omp_get_wtime();
+  
+  unsigned int k;
+  #pragma omp parallel for shared(k) 
   for (unsigned int i=0;i<p-1;i++) {
-    if (modExp(g,i+1,p)==h) {
+    k = modExp(g,i+1,p);
+    if (k==h) {
       printf("Secret key found! x = %u \n", i+1);
     } 
   }

@@ -152,6 +152,8 @@ void ElGamalEncrypt(unsigned int *m, unsigned int *a, unsigned int Nints,
                     unsigned int p, unsigned int g, unsigned int h) {
 
   /* Q2.1 Parallelize this function with OpenMP   */
+  
+  #pragma omp parallel for
 
   for (unsigned int i=0; i<Nints;i++) {
     //pick y in Z_p randomly
@@ -176,6 +178,8 @@ void ElGamalDecrypt(unsigned int *m, unsigned int *a, unsigned int Nints,
 
   /* Q2.1 Parallelize this function with OpenMP   */
 
+  #pragma omp parallel for
+
   for (unsigned int i=0; i<Nints;i++) {
     //compute s = a^x
     unsigned int s = modExp(a[i],x,p);
@@ -194,6 +198,11 @@ void padString(unsigned char* string, unsigned int charsPerInt) {
 
   /* Q1.2 Complete this function   */
 
+  while ( strlen(string) % charsPerInt != 0) {
+    //append a space char repeatedly until divides evenly:
+    strcat(string, " ");
+  }
+
 }
 
 
@@ -203,6 +212,18 @@ void convertStringToZ(unsigned char *string, unsigned int Nchars,
   /* Q1.3 Complete this function   */
   /* Q2.2 Parallelize this function with OpenMP   */
 
+  int cpi = Nchars/Nints;  
+  #pragma omp parallel for
+
+  for (int i = 0; i < Nints; i++) 
+  {
+     Z[i] = 0;
+     for (int j = cpi; j > 0; j--) 
+     {
+        Z[i] += (int) string[i*cpi + j/(cpi+1)] << 8*j;
+     }
+        
+  }
 }
 
 
@@ -211,6 +232,13 @@ void convertZToString(unsigned int  *Z,      unsigned int Nints,
 
   /* Q1.4 Complete this function   */
   /* Q2.2 Parallelize this function with OpenMP   */
+  
+  int cpi = Nchars/Nints;
+  #pragma omp parallel for 
+
+  for (int i = 0; i < Nchars; i += cpi) {
+      string[i] = (char) Z[i];
+  }
 
 }
 
