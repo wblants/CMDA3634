@@ -1,0 +1,235 @@
+make: Nothing to be done for `all'.
+Using 4 MPI processes with n = 3ElGamal Setup successful.
+p = 5. 
+g = 3 is a generator of Z_5 
+Secret key: x = 3 
+h = g^x = 2
+
+Using 4 processes to find the secret key...
+Secret key found! x = 3 
+
+Run time for this program was 0.000045 seconds. 
+The throughput for this program was 88768.338624 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 4ElGamal Setup successful.
+p = 17. 
+g = 7 is a generator of Z_17 
+Secret key: x = 7 
+h = g^x = 12
+
+Using 4 processes to find the secret key...
+Secret key found! x = 7 
+
+Run time for this program was 0.000030 seconds. 
+The throughput for this program was 532610.031746 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 5ElGamal Setup successful.
+p = 31. 
+g = 22 is a generator of Z_31 
+Secret key: x = 15 
+h = g^x = 30
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15 
+
+Secret key found! x = 15 
+
+Run time for this program was 0.000048 seconds. 
+The throughput for this program was 626015.522388 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 6ElGamal Setup successful.
+p = 61. 
+g = 53 is a generator of Z_61 
+Secret key: x = 22 
+h = g^x = 3
+
+Using 4 processes to find the secret key...
+Secret key found! x = 2 
+
+Secret key found! x = 22 
+
+Secret key found! x = 42 
+
+Run time for this program was 0.000034 seconds. 
+The throughput for this program was 1772241.126761 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 7ElGamal Setup successful.
+p = 127. 
+g = 114 is a generator of Z_127 
+Secret key: x = 60 
+h = g^x = 117
+
+Using 4 processes to find the secret key...
+Secret key found! x = 60 
+
+Run time for this program was 0.000040 seconds. 
+The throughput for this program was 3145728.000000 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 8ElGamal Setup successful.
+p = 149. 
+g = 87 is a generator of Z_149 
+Secret key: x = 88 
+h = g^x = 73
+
+Using 4 processes to find the secret key...
+Secret key found! x = 88 
+
+Run time for this program was 0.000037 seconds. 
+The throughput for this program was 4004883.819355 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 9ElGamal Setup successful.
+p = 487. 
+g = 283 is a generator of Z_487 
+Secret key: x = 163 
+h = g^x = 293
+
+Using 4 processes to find the secret key...
+Secret key found! x = 163 
+
+Run time for this program was 0.000083 seconds. 
+The throughput for this program was 5857562.482759 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 10ElGamal Setup successful.
+p = 971. 
+g = 172 is a generator of Z_971 
+Secret key: x = 398 
+h = g^x = 269
+
+Using 4 processes to find the secret key...
+Secret key found! x = 398 
+
+Run time for this program was 0.000259 seconds. 
+The throughput for this program was 3742847.175713 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 11ElGamal Setup successful.
+p = 1951. 
+g = 566 is a generator of Z_1951 
+Secret key: x = 538 
+h = g^x = 1263
+
+Using 4 processes to find the secret key...
+Secret key found! x = 538 
+
+Run time for this program was 0.000703 seconds. 
+The throughput for this program was 2773446.185148 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 12ElGamal Setup successful.
+p = 3907. 
+g = 1896 is a generator of Z_3907 
+Secret key: x = 1131 
+h = g^x = 78
+
+Using 4 processes to find the secret key...
+Secret key found! x = 1131 
+
+Run time for this program was 0.001488 seconds. 
+The throughput for this program was 2624631.756488 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 13ElGamal Setup successful.
+p = 4799. 
+g = 4735 is a generator of Z_4799 
+Secret key: x = 2652 
+h = g^x = 3829
+
+Using 4 processes to find the secret key...
+Secret key found! x = 2652 
+
+Run time for this program was 0.002038 seconds. 
+The throughput for this program was 2354266.564343 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 14ElGamal Setup successful.
+p = 9619. 
+g = 7638 is a generator of Z_9619 
+Secret key: x = 6515 
+h = g^x = 5323
+
+Using 4 processes to find the secret key...
+Secret key found! x = 6515 
+
+Run time for this program was 0.005090 seconds. 
+The throughput for this program was 1889588.077755 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 15ElGamal Setup successful.
+p = 31079. 
+g = 7727 is a generator of Z_31079 
+Secret key: x = 15098 
+h = g^x = 3136
+
+Using 4 processes to find the secret key...
+Secret key found! x = 15098 
+
+Run time for this program was 0.021520 seconds. 
+The throughput for this program was 1444135.734994 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 16ElGamal Setup successful.
+p = 62143. 
+g = 60299 is a generator of Z_62143 
+Secret key: x = 27627 
+h = g^x = 8191
+
+Using 4 processes to find the secret key...
+Secret key found! x = 27627 
+
+Run time for this program was 0.049098 seconds. 
+The throughput for this program was 1265672.353826 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 17ElGamal Setup successful.
+p = 124291. 
+g = 1820 is a generator of Z_124291 
+Secret key: x = 44974 
+h = g^x = 21422
+
+Using 4 processes to find the secret key...
+Secret key found! x = 31164 
+
+Secret key found! x = 3544 
+
+Secret key found! x = 100214 
+
+Secret key found! x = 72594 
+
+Run time for this program was 0.036754 seconds. 
+The throughput for this program was 3381682.597352 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 18ElGamal Setup successful.
+p = 153487. 
+g = 122938 is a generator of Z_153487 
+Secret key: x = 95074 
+h = g^x = 57851
+
+Using 4 processes to find the secret key...
+Secret key found! x = 78020 
+
+Secret key found! x = 43912 
+
+Secret key found! x = 9804 
+
+Run time for this program was 0.053654 seconds. 
+The throughput for this program was 2860665.139881 ops/second. 
+-----------------------------------------------------
+Secret key found! x = 129182 
+
+Using 4 MPI processes with n = 19ElGamal Setup successful.
+p = 497111. 
+g = 210196 is a generator of Z_497111 
+Secret key: x = 195299 
+h = g^x = 252508
+
+Using 4 processes to find the secret key...
+Secret key found! x = 195299 
+
+Run time for this program was 0.564435 seconds. 
+The throughput for this program was 880721.421299 ops/second. 
+-----------------------------------------------------
+Using 4 MPI processes with n = 20ElGamal Setup successful.
+p = 994163. 
+g = 259325 is a generator of Z_994163 
+Secret key: x = 308216 
+h = g^x = 170332
+
+Using 4 processes to find the secret key...
+Secret key found! x = 308216 
+
+Run time for this program was 1.291802 seconds. 
+The throughput for this program was 769593.214964 ops/second. 
+-----------------------------------------------------

@@ -26,8 +26,8 @@ int main (int argc, char **argv) {
   unsigned int n;
   
   if (rank == 0) {
-    n = 10; //set n for this problem
-    printf("Using %d MPI processes with n = 10",size);
+    n = atoi(argv[1]); //set n for this problem
+    printf("Using %d MPI processes with n = %u",size,n);
   }
   /*
   if (rank == 0) {

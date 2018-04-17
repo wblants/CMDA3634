@@ -13,9 +13,9 @@ module load gcc openmpi
 
 make
 
-for Nthreads in `seq 1 20`
+for Nthreads in `seq 3 20`
 do 
-    mpirun -np $Nthreads ./main;
+    mpirun -np 4 ./main $Nthreads;
 done;
 
 

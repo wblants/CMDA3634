@@ -1,0 +1,56 @@
+nvcc -arch=sm_60 -I. -c mandelbrot.cu
+nvcc -arch=sm_60 -I. -c png_util.c
+nvcc -arch=sm_60 -o mandelbrot mandelbrot.o png_util.o -lpng -lm
+Nthreads=1
+elapsed = 78.600000
+Printing mandelbrot.png...done.
+Nthreads=5
+elapsed = 78.720000
+Printing mandelbrot.png...done.
+Nthreads=9
+elapsed = 78.470000
+Printing mandelbrot.png...done.
+Nthreads=13
+elapsed = 78.500000
+Printing mandelbrot.png...done.
+Nthreads=17
+elapsed = 78.520000
+Printing mandelbrot.png...done.
+Nthreads=21
+elapsed = 78.450000
+Printing mandelbrot.png...done.
+Nthreads=25
+
+Usage:
+ kill [options] <pid|name> [...]
+
+Options:
+ -a, --all              do not restrict the name-to-pid conversion to processes
+                        with the same uid as the present process
+ -s, --signal <sig>     send specified signal
+ -q, --queue <sig>      use sigqueue(2) rather than kill(2)
+ -p, --pid              print pids without signaling them
+ -l, --list [=<signal>] list signal names, or convert one to a name
+ -L, --table            list signal names and numbers
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+
+Usage:
+ kill [options] <pid|name> [...]
+
+Options:
+ -a, --all              do not restrict the name-to-pid conversion to processes
+                        with the same uid as the present process
+ -s, --signal <sig>     send specified signal
+ -q, --queue <sig>      use sigqueue(2) rather than kill(2)
+ -p, --pid              print pids without signaling them
+ -l, --list [=<signal>] list signal names, or convert one to a name
+ -L, --table            list signal names and numbers
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).

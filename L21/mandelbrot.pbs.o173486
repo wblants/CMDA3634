@@ -1,0 +1,58 @@
+make: *** No rule to make target `mandelbrot.cu', needed by `mandelbrot.o'.  Stop.
+Nthreads=1
+elapsed = 81.380000
+Printing mandelbrot.png...done.
+Nthreads=5
+elapsed = 80.080000
+Printing mandelbrot.png...done.
+Nthreads=9
+elapsed = 80.190000
+Printing mandelbrot.png...done.
+Nthreads=13
+elapsed = 79.250000
+Printing mandelbrot.png...done.
+Nthreads=17
+elapsed = 79.570000
+Printing mandelbrot.png...done.
+Nthreads=21
+elapsed = 90.720000
+Printing mandelbrot.png...done.
+Nthreads=25
+elapsed = 102.640000
+Printing mandelbrot.png...done.
+Nthreads=29
+=>> PBS: job killed: walltime 615 exceeded limit 600
+
+Usage:
+ kill [options] <pid|name> [...]
+
+Options:
+ -a, --all              do not restrict the name-to-pid conversion to processes
+                        with the same uid as the present process
+ -s, --signal <sig>     send specified signal
+ -q, --queue <sig>      use sigqueue(2) rather than kill(2)
+ -p, --pid              print pids without signaling them
+ -l, --list [=<signal>] list signal names, or convert one to a name
+ -L, --table            list signal names and numbers
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+
+Usage:
+ kill [options] <pid|name> [...]
+
+Options:
+ -a, --all              do not restrict the name-to-pid conversion to processes
+                        with the same uid as the present process
+ -s, --signal <sig>     send specified signal
+ -q, --queue <sig>      use sigqueue(2) rather than kill(2)
+ -p, --pid              print pids without signaling them
+ -l, --list [=<signal>] list signal names, or convert one to a name
+ -L, --table            list signal names and numbers
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
