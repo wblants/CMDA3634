@@ -6,6 +6,9 @@
 
 #include "functions.h"
 
+//function stub:
+void writeToFile(char*, unsigned int, unsigned int, unsigned int, unsigned int);
+
 int main (int argc, char **argv) {
 
   //seed value for the randomizer 
@@ -37,6 +40,23 @@ int main (int argc, char **argv) {
   printf("Writing to file.\n");
 
   /* Q1 Complete this function and write the puclib key data to the file public_key.txt */
-  
+  writeToFile("public_key.txt", n, p, g, h);
+
   return 0;
 }
+
+void writeToFile(char* filename, unsigned int n, unsigned int p, unsigned int g, unsigned int h) {
+    
+    FILE *file;
+    file = fopen(filename, "w+"); //open the file with writing privaledges
+    
+    //print the info:
+    fprintf(file, "%u\n", n);
+    fprintf(file, "%u\n", p);
+    fprintf(file, "%u\n", g);
+    fprintf(file, "%u\n", h);
+    
+    //close the file when done writing
+    fclose(file);
+}
+

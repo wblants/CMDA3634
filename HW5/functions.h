@@ -43,3 +43,5 @@ void convertZToString(unsigned int  *Z,      unsigned int Nints,
 
 //cuda surprisingly doesn't have a strlen function for unsigned chars....
 unsigned int mystrlen(unsigned char* string);
+
+char** str_split(char*,const char);
