@@ -11,7 +11,31 @@
 void readKeyInfo(char* fileName, unsigned int* n, unsigned int* p, unsigned int* g, unsigned int* h);
 void readMessage(char* fileName, unsigned int* cipherText, unsigned int* a);
 
-__global__ int findSecretKey(int g, int p, int h) {
+__device__ int kernel_modprod(unsigned int a, unsigned int b, unsigned int p) {
+    unsigned int za = a;
+    unsigned int ab = 0;
+
+    while(b > 0) {
+        if (b % 2 == 1) ab = (ab + za) % p;
+        za = (2 * za) % p;
+        b /= 2;
+    }
+    return ab;
+}
+
+__device__ int kernel_modExp(unsigned int a, unsigned int b, unsigned int p) {
+    unsigned int z = a;
+    unsigned int aExpb = 1;
+
+    while (b > 0) {
+        if (b % 2 == 1) aExp = kernel_modprod(aExpb, z, p);
+        z = modprod(z, z, p);
+        b /= 2;
+    }
+    return aExpb;
+}
+
+__global__ int findSecretKey(unsigned int g, unsigned int p, unsigned int h,  unsigned int* h_x) {
   
   // find the secret key
   int tId = threadIdx.x;
@@ -21,7 +45,9 @@ __global__ int findSecretKey(int g, int p, int h) {
   unsigned int x = tId + bId*bSize;
 
   //recreate modProd and ModExp
-  modExp(g,x,p) == h
+  if (kernel_modExp(g,x,p) == h) {
+    cudaMemcpy(x, h_x, sizeof(unsigned int),cudaMemcpyDeviceToHost);
+  }
 
   //create mem for x to copy from device to host
 }
@@ -60,9 +86,13 @@ int main (int argc, char **argv) {
   unsigned int* cipherText; 
   cudaMalloc(&cipherText, Nints*sizeof(unsigned int));
   
+  cudaMemcpy(cipherText, h_cipherText, Nints*sizeof(unsigned int), cudaMemcpyDeviceToHost);
+
   unsigned int* a;
   cudaMalloc(&a, Nints*sizeof(unsigned int));
 
+  cudaMemcpy(a, h_a, Nints*sizeof(unsigned int), cudaMemcpyDeviceToHost);
+  
   readMessage("message.txt", cipherText, a);
 
   for (int i = 0; i < Nints; i++) {
@@ -80,6 +110,10 @@ int main (int argc, char **argv) {
 
   /* Q3 After finding the secret key, decrypt the message */
   
+  unsigned int x;
+  findSecretKey << x >> (g, p, h);
+  cudaDeviceSynchronize();
+
   ElGamalDecrypt(cipherText, a, Nints, p, x);
 
   char *plainText;
@@ -90,6 +124,8 @@ int main (int argc, char **argv) {
 
   printf("Decrypted Message: %s\n", plainText);
 
+  cudaFree(cipherText);
+  cudaFree(a);
 
   return 0;
 }
