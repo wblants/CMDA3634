@@ -68,7 +68,7 @@ int main (int argc, char **argv) {
   /* Q3 Complete this function. Read in the public key data from public_key.txt
     and the cyphertexts from messages.txt. */
   
-  readKeyInfo("public_key.txt", &n, &p, &g, &h);
+  readKeyInfo("bonus_public_key.txt", &n, &p, &g, &h);
 
   printf("Decrypt.c Read in:\nn = %u\np = %u\ng = %u\nh = %u\n",
           n, p, g, h);
@@ -80,7 +80,7 @@ int main (int argc, char **argv) {
   dim3 G((p+Nthreads-1)/Nthreads, 1, 1);
  
   FILE* file;
-  file = fopen("message.txt", "r");
+  file = fopen("bonus_message.txt", "r");
   fscanf(file, "%u", &Nints);
   fclose(file);
 
@@ -90,20 +90,17 @@ int main (int argc, char **argv) {
   unsigned int* a =
       (unsigned int*) malloc(Nints*sizeof(unsigned int));
 
-  readMessage("message.txt", cipherText, a);
+  //readMessage("message.txt", cipherText, a);
+  readMessage("bonus_message.txt", cipherText, a);
 
-  for (int i = 0; i < Nints; i++) {
-    printf("cT[%d] = %u\n", i, cipherText[i]);
-  }
-    
     double startTime = clock();
       
     unsigned int *d_x;
     cudaMalloc(&d_x, sizeof(unsigned int));
 
-    findSecretKey <<< B,G >>> (g, p, h, d_x);
+    findSecretKey <<< G,B >>> (g, p, h, d_x);
     cudaDeviceSynchronize();
-    cudaMemcpy(d_x, &x, sizeof(unsigned int),cudaMemcpyDeviceToHost);
+    cudaMemcpy(&x, d_x, sizeof(unsigned int),cudaMemcpyDeviceToHost);
     
     printf("Host has x = %u\n", x);
 

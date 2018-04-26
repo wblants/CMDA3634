@@ -66,18 +66,22 @@ int main (int argc, char **argv) {
     double totalTime = (endTime-startTime)/CLOCKS_PER_SEC;
     double work = (double) p;
     double throughput = work/totalTime;
-
+    
     printf("Searching all keys took %g seconds, throughput was %g values tested per second.\n", totalTime, throughput);
 
   /* Q3 After finding the secret key, decrypt the message */
   
   ElGamalDecrypt(cipherText, a, Nints, p, x);
 
+  printf("Got to 76\n");
+
   char *plainText;
     
   unsigned int Nchars = Nints*(n-1)/8;
 
   convertZToString(cipherText, Nints, plainText, Nchars);
+    
+  printf("Got to 84\n");
 
   printf("Decrypted Message: %s\n", plainText);
 
