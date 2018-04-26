@@ -50,16 +50,17 @@ int main (int argc, char **argv) {
     printf("cT[%d] = %u\n", i, cipherText[i]);
   }
 
+  double startTime = clock();
   // find the secret key
   if (x==0 || modExp(g,x,p)!=h) {
     printf("Finding the secret key...\n");
-    double startTime = clock();
     for (unsigned int i=0;i<p-1;i++) {
       if (modExp(g,i+1,p)==h) {
         printf("Secret key found! x = %u \n", i+1);
         x=i+1;
       } 
     }
+  }
     double endTime = clock();
 
     double totalTime = (endTime-startTime)/CLOCKS_PER_SEC;
@@ -67,7 +68,6 @@ int main (int argc, char **argv) {
     double throughput = work/totalTime;
 
     printf("Searching all keys took %g seconds, throughput was %g values tested per second.\n", totalTime, throughput);
-  }
 
   /* Q3 After finding the secret key, decrypt the message */
   

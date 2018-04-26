@@ -5,12 +5,14 @@
 #include <time.h>
 
 #include "cuda.h"
-#include "functions.h"
+#include "functions.c"
 
+//----Function Stubs-----
+void readKeyInfo(const char* fileName, unsigned int* n, unsigned int* p, unsigned int* g, unsigned int* h);
 
-void readKeyInfo(char* fileName, unsigned int* n, unsigned int* p, unsigned int* g, unsigned int* h);
-void readMessage(char* fileName, unsigned int* cipherText, unsigned int* a);
+void readMessage(const char* fileName, unsigned int* cipherText, unsigned int* a);
 
+//----kernel and device functions----
 __device__ int kernel_modprod(unsigned int a, unsigned int b, unsigned int p) {
     unsigned int za = a;
     unsigned int ab = 0;
@@ -28,14 +30,14 @@ __device__ int kernel_modExp(unsigned int a, unsigned int b, unsigned int p) {
     unsigned int aExpb = 1;
 
     while (b > 0) {
-        if (b % 2 == 1) aExp = kernel_modprod(aExpb, z, p);
-        z = modprod(z, z, p);
+        if (b % 2 == 1) aExpb = kernel_modprod(aExpb, z, p);
+        z = kernel_modprod(z, z, p);
         b /= 2;
     }
     return aExpb;
 }
 
-__global__ int findSecretKey(unsigned int g, unsigned int p, unsigned int h,  unsigned int* h_x) {
+__global__ void findSecretKey(unsigned int g, unsigned int p, unsigned int h, unsigned int* d_x) {
   
   // find the secret key
   int tId = threadIdx.x;
@@ -43,13 +45,11 @@ __global__ int findSecretKey(unsigned int g, unsigned int p, unsigned int h,  un
   int bSize = blockDim.x;
 
   unsigned int x = tId + bId*bSize;
-
-  //recreate modProd and ModExp
+  
   if (kernel_modExp(g,x,p) == h) {
-    cudaMemcpy(x, h_x, sizeof(unsigned int),cudaMemcpyDeviceToHost);
+      *d_x = x;
   }
 
-  //create mem for x to copy from device to host
 }
 
 int main (int argc, char **argv) {
@@ -57,6 +57,7 @@ int main (int argc, char **argv) {
   //declare storage for an ElGamal cryptosytem
   unsigned int n, p, g, h, x;
   unsigned int Nints;
+  unsigned int Nthreads = atoi(argv[1]);
 
   //get the secret key from the user
   printf("Enter the secret key (0 if unknown): "); fflush(stdout);
@@ -71,33 +72,40 @@ int main (int argc, char **argv) {
 
   printf("Decrypt.c Read in:\nn = %u\np = %u\ng = %u\nh = %u\n",
           n, p, g, h);
-    
-  //copy values to device
-  cudaMemcpy(n,d_n,sizeof(unsigned int),cudaMemcpyHostToDevice);
-  cudaMemcpy(p,d_p,sizeof(unsigned int),cudaMemcpyHostToDevice);
-  cudaMemcpy(g,d_g,sizeof(unsigned int),cudaMemcpyHostToDevice);
-  cudaMemcpy(h,d_h,sizeof(unsigned int),cudaMemcpyHostToDevice);
+  
+  //block dimmensions
+  dim3 B(Nthreads, 1, 1);
 
+  //grid dimmensions
+  dim3 G((p+Nthreads-1)/Nthreads, 1, 1);
+ 
   FILE* file;
   file = fopen("message.txt", "r");
   fscanf(file, "%u", &Nints);
   fclose(file);
 
-  unsigned int* cipherText; 
-  cudaMalloc(&cipherText, Nints*sizeof(unsigned int));
+  unsigned int* cipherText = 
+      (unsigned int*) malloc(Nints*sizeof(unsigned int));
   
-  cudaMemcpy(cipherText, h_cipherText, Nints*sizeof(unsigned int), cudaMemcpyDeviceToHost);
+  unsigned int* a =
+      (unsigned int*) malloc(Nints*sizeof(unsigned int));
 
-  unsigned int* a;
-  cudaMalloc(&a, Nints*sizeof(unsigned int));
-
-  cudaMemcpy(a, h_a, Nints*sizeof(unsigned int), cudaMemcpyDeviceToHost);
-  
   readMessage("message.txt", cipherText, a);
 
   for (int i = 0; i < Nints; i++) {
     printf("cT[%d] = %u\n", i, cipherText[i]);
   }
+    
+    double startTime = clock();
+      
+    unsigned int *d_x;
+    cudaMalloc(&d_x, sizeof(unsigned int));
+
+    findSecretKey <<< B,G >>> (g, p, h, d_x);
+    cudaDeviceSynchronize();
+    cudaMemcpy(d_x, &x, sizeof(unsigned int),cudaMemcpyDeviceToHost);
+    
+    printf("Host has x = %u\n", x);
 
     double endTime = clock();
 
@@ -106,37 +114,28 @@ int main (int argc, char **argv) {
     double throughput = work/totalTime;
 
     printf("Searching all keys took %g seconds, throughput was %g values tested per second.\n", totalTime, throughput);
-  }
 
   /* Q3 After finding the secret key, decrypt the message */
   
-  unsigned int x;
-  findSecretKey << x >> (g, p, h);
-  cudaDeviceSynchronize();
-
   ElGamalDecrypt(cipherText, a, Nints, p, x);
 
-  char *plainText;
+  unsigned int charsPerInt = Nints*(n-1)/8;
     
-  unsigned int Nchars = Nints*(n-1)/8;
+  unsigned char *plainText = 
+    (unsigned char*) malloc(Nints*charsPerInt*sizeof(char));
 
-  convertZToString(cipherText, Nints, plainText, Nchars);
+  convertZToString(cipherText, Nints, plainText, charsPerInt);
 
   printf("Decrypted Message: %s\n", plainText);
-
-  cudaFree(cipherText);
-  cudaFree(a);
 
   return 0;
 }
 
-void readKeyInfo(char* fileName, unsigned int* n, unsigned int* p, unsigned int* g, unsigned int* h) {
+void readKeyInfo(const char* fileName, unsigned int* n, unsigned int* p, unsigned int* g, unsigned int* h) {
     
     FILE *file;
     file = fopen(fileName, "r");
 
-    char *buff;
-     
     for (int i = 0; i < 4; i++) {
         if (i == 0) fscanf(file, "%u", n);
         if (i == 1) fscanf(file, "%u", p);
@@ -148,7 +147,7 @@ void readKeyInfo(char* fileName, unsigned int* n, unsigned int* p, unsigned int*
 
 }
 
-void readMessage(char* fileName, unsigned int* m, unsigned int* a) {
+void readMessage(const char* fileName, unsigned int* m, unsigned int* a) {
 
     FILE *file;
     file = fopen(fileName, "r"); //open the file with writing privaledges
@@ -166,17 +165,3 @@ void readMessage(char* fileName, unsigned int* m, unsigned int* a) {
 
 }
 
-nt findSecretKey() {
-  
-  // find the secret key
-  if (x==0 || modExp(g,x,p)!=h) {
-    printf("Finding the secret key...\n");
-    double startTime = clock();
-    for (unsigned int i=0;i<p-1;i++) {
-      if (modExp(g,i+1,p)==h) {
-        printf("Secret key found! x = %u \n", i+1);
-        x=i+1;
-      } 
-    }
-
-}
